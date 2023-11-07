@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    padding:0px 100px;
+}
+/* Navbar */
+header{
+    width: 100%;
+    background-color: #f85264;
+    height: 80px;
+}
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar-Links-box{
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border-left: 1px solid #ff74a2;
+    transition: 0.5s;
+}
+.Home-nav-item{
+    background-color: #f7679d;
+    border: 2px solid #ff74a2;
+}
+.nav-item:hover{
+    background-color: white;
+    color: #f7679d;
+}
+.Navbar-Icons-box{
+    width: 20%;
+    height: 80px;
+    border: 2px solid #fa6a6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar-icon{
+    width: 16%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+.Navbar-icon-search{
+    width: 32%;
+    background-color: #f7626b;
+    border: 1px solid #fd6971;
+}
+.Navbar-icon:hover{
+    background-color: white;
+    color: #f7679d;
+}
+.navbar-btn{
+    display: none;
+}
+/* Navbar */
+/* Home */
+#Home{
+    padding:40px 0;
+    height: 100vh;
+}
+.container-home{
+    height: 100%;
+}
+.home{
+    height: 100%;
+    display: flex;
+}
+.home-child-1{
+    background:url(images/photo_2023-11-06_19-22-57.jpg);
+    background-size: 100% 100%;
+    padding: 40px;
+    width: 60%;
+}
+.home-card-1 , .home-card-2 , .home-card-3{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.title-card{
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.home-card-1-text{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 2rem;
+}
+.home-icons{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+}
+i{
+    margin-right: 8px;
+}
+.home-child-2{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+.home-card-2{
+    background:url(images/photo_2023-11-06_19-22-49.jpg);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+.home-card-3{
+    background: url(images/running.jfif);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+.title-card-3{
+    background-color: blue;
+}
+.home-card-2-text , .home-card-3-text{
+    color: white;
+}
+/* Home */
+/* News */
+.new-title{
+    font-size: 32px;
+}
+.news-card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-card-1 , .news-card-2 , .news-card-3 , .news-card-4{
+    height: 300px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+.new-sup-title{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+}
+h3{
+    color: white;
+}
+.home-time-icons-box{
+    color:white;
+    margin-top: 1rem;
+}
+.news-card-1{
+    background: url(images/download.jfif);
+    background-size: 100% 100%;
+}
+.news-card-2{
+    background: url(images/download\ \(1\).jfif);
+    background-size: 100% 100%;
+}
+.news-card-3{
+    background: url(images/images.jfif);
+    background-size: 100% 100%;
+}
+.news-card-4{
+    background: url(images/download\ \(2\).jfif);
+    background-size: 100% 100%;
+}
+/* News */
+@media screen and (max-width:998px){
+    .nav-box{
+        display: none;
+    }
+    .container-navbar{
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-btn{
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        border: 5px solid white;
+        background-color: #fd6971;
+        color: white;
+    }
+    .home{
+        height: 100%;
+        flex-direction: column;
+    }
+    .container{
+        padding: 0;
+    }
+    .home-child-1{
+        width: 100%;
+        height: 50%;
+    }
+    .home-child-2{
+        width: 100%;
+        height: 100%;
+    }
+    .home-child-3{
+        width: 100%;
+        height: 100%;
+    }
+    .news-card-box{
+        flex-direction: column;
+    }
+    .news-card-1 , .news-card-2 , .news-card-3 , .news-card-4{
+        height: 300px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 20px;
+    }
+}
